@@ -1,0 +1,16 @@
+# Segredos e arquivos locais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Neo4j local
+neo4j/data/
+neo4j/logs/
+neo4j/plugins/
+
+# Sistema e IDE
+.DS_Store
+.vscode/
+.idea/

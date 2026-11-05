@@ -1,0 +1,16 @@
+usuario_id;usuario_nome;pais;musica_id;titulo;ano;popularidade;artista_id;artista_nome;genero;reproducoes;nota;ultima_vez
+u001;Ana;BR;m001;Midnight City;2011;92;a001;M83;Synthpop;24;5;2026-10-21
+u001;Ana;BR;m002;Electric Feel;2007;88;a002;MGMT;Indie Rock;18;5;2026-10-20
+u001;Ana;BR;m003;The Less I Know the Better;2015;94;a003;Tame Impala;Psychedelic Pop;31;5;2026-10-18
+u002;Bruno;BR;m001;Midnight City;2011;92;a001;M83;Synthpop;16;4;2026-10-19
+u002;Bruno;BR;m003;The Less I Know the Better;2015;94;a003;Tame Impala;Psychedelic Pop;12;5;2026-10-15
+u002;Bruno;BR;m004;Instant Crush;2013;91;a004;Daft Punk;Electropop;21;5;2026-10-22
+u003;Carla;PT;m001;Midnight City;2011;92;a001;M83;Synthpop;8;4;2026-10-17
+u003;Carla;PT;m002;Electric Feel;2007;88;a002;MGMT;Indie Rock;13;5;2026-10-16
+u003;Carla;PT;m005;Sweet Disposition;2009;86;a005;The Temper Trap;Indie Rock;27;5;2026-10-12
+u004;Diego;AR;m002;Electric Feel;2007;88;a002;MGMT;Indie Rock;9;4;2026-10-10
+u004;Diego;AR;m004;Instant Crush;2013;91;a004;Daft Punk;Electropop;15;5;2026-10-14
+u004;Diego;AR;m006;Lisztomania;2009;83;a006;Phoenix;Indie Rock;22;4;2026-10-11
+u005;Elisa;BR;m003;The Less I Know the Better;2015;94;a003;Tame Impala;Psychedelic Pop;11;5;2026-10-08
+u005;Elisa;BR;m004;Instant Crush;2013;91;a004;Daft Punk;Electropop;19;4;2026-10-09
+u005;Elisa;BR;m005;Sweet Disposition;2009;86;a005;The Temper Trap;Indie Rock;14;5;2026-10-07
