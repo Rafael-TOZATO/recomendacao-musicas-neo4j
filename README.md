@@ -24,6 +24,21 @@ Para uma análise aprofundada da arquitetura, formulação do algoritmo de recom
 
 - 📥 [**Baixar Dossiê Técnico em PDF**](docs/Dossie_Tecnico_SoundGraph_Neo4j.pdf)
 
+---
+### 📍 Projeto em Destaque: Automação & Análise de Dados no McDonald's (Rua do Riachuelo, SP)
+
+Atuação técnica focada na otimização de rotinas operacionais, monitoramento de métricas em tempo real e estruturação de rotinas de análise para o restaurante McDonald's localizado na Rua do Riachuelo, São Paulo. A solução integra pipelines de dados e visualização de dashboards funcionais para suporte à tomada de decisão rápida e controle de qualidade contínuo.
+
+---
+
+### 🌐 Contato e Portfólio Professional
+
+* **LinkedIn:** [Rafael Ornelas Tozato](https://linkedin.com/in/rafael-ornelas-tozato)
+* **Medium:** [Artigos & Publicações Técnicas](https://medium.com/@rafael-tozato)
+* **PWA & Ecossistema:** [Tozato AI Core / App](https://tozato-dev-hub.vercel.app)
+
+---
+
 ## Por que grafos?
 
 Em um modelo relacional, a pergunta “o que pessoas parecidas escutaram e eu ainda não escutei?” exige várias junções. Em Neo4j, os caminhos entre `Usuario`, `Musica`, `Artista` e `Genero` são os próprios dados, tornando a consulta mais natural, legível e fácil de evoluir.
