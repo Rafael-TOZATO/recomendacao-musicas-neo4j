@@ -14,11 +14,15 @@
 
 ---
 
+---
+
 ## Visão geral
 
 O SoundGraph representa usuários, músicas, artistas, gêneros e interações em um grafo. A recomendação parte de um princípio simples e explicável: **usuários com gostos semelhantes ajudam a encontrar músicas que ainda não foram ouvidas**.
 
 > Projeto autoral inspirado na organização dos exemplos públicos de [`neo4j-graph-examples`](https://github.com/neo4j-graph-examples/), sem reutilizar dados proprietários.
+
+---
 
 ---
 
@@ -37,9 +41,13 @@ Atuação técnica focada na otimização de rotinas operacionais, monitoramento
 
 ---
 
+---
+
 ## Por que grafos?
 
 Em um modelo relacional, a pergunta “o que pessoas parecidas escutaram e eu ainda não escutei?” exige várias junções. Em Neo4j, os caminhos entre `Usuario`, `Musica`, `Artista` e `Genero` são os próprios dados, tornando a consulta mais natural, legível e fácil de evoluir.
+
+---
 
 ---
 
@@ -56,6 +64,8 @@ Em um modelo relacional, a pergunta “o que pessoas parecidas escutaram e eu ai
 - `(:Usuario)-[:OUVIU {reproducoes, nota, ultimaVez}]->(:Musica)`
 - `(:Musica)-[:CRIADA_POR]->(:Artista)`
 - `(:Musica)-[:PERTENCE_A]->(:Genero)`
+
+---
 
 ---
 
@@ -130,3 +140,7 @@ Este repositório adota controles automatizados de Governança 4.0 para assegura
 - **H-Folio:** [h-folio-l0.vercel.app](https://h-folio-l0.vercel.app)
 - **Microsoft Learn:** [rafaelornelastozato-2209](https://learn.microsoft.com/pt-br/users/rafaelornelastozato-2209)
 ---
+
+---
+
+## 📬 CONTATOS E PERFIS
