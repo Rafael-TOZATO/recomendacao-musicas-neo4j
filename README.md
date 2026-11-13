@@ -116,14 +116,17 @@ Este repositório adota controles automatizados de Governança 4.0 para assegura
 - **Menor privilégio:** permissões mínimas nos workflows e checkout sem persistência desnecessária de credenciais.
 - **Rastreabilidade:** commits, execuções e resultados dos controles permanecem registrados no GitHub Actions.
 
+
+
+
+---
+
 <div align="center">
 
 [![Quality Gate](https://img.shields.io/github/actions/workflow/status/Rafael-TOZATO/recomendacao-musicas-neo4j/quality-gate.yml?branch=main&label=Quality%20Gate)](https://github.com/Rafael-TOZATO/recomendacao-musicas-neo4j/actions/workflows/quality-gate.yml)
 [![Gitleaks](https://img.shields.io/github/actions/workflow/status/Rafael-TOZATO/recomendacao-musicas-neo4j/gitleaks.yml?branch=main&label=Gitleaks)](https://github.com/Rafael-TOZATO/recomendacao-musicas-neo4j/actions/workflows/gitleaks.yml)
 
 </div>
-
----
 
 ## 📬 CONTATOS E PERFIS
 
