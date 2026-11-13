@@ -10,6 +10,10 @@
   <img src="https://img.shields.io/badge/Lean%20Six%20Sigma-Green%20Belt-purple?style=for-the-badge&logo=ercot&logoColor=white" alt="Lean Six Sigma">
   <img src="https://img.shields.io/badge/Neo4j-5.x-008CC1?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j 5" />
   <img src="https://img.shields.io/badge/Cypher-Query%20Language-4581C3?style=for-the-badge" alt="Cypher" />
+  <img src="https://img.shields.io/badge/DIO-Projeto%20de%20Dados-7B61FF?style=for-the-badge" alt="DIO" />
+  <img src="https://img.shields.io/badge/Documentation-PDF%20Report-FF6C37?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Documentação PDF" />
+  <img src="https://img.shields.io/badge/Security-Best%20Practices-2EA44F?style=for-the-badge&logo=github" alt="Boas práticas de segurança" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="Licença MIT" />
   <img src="https://img.shields.io/badge/CI%2FCD-Active-success?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI/CD">
   <img src="https://img.shields.io/badge/CodeQL-Protected-blue?style=for-the-badge&logo=github&logoColor=white" alt="CodeQL">
   <img src="https://img.shields.io/badge/Auto--Merge-Streamlined-informational?style=for-the-badge&logo=git&logoColor=white" alt="Auto-Merge">
@@ -18,7 +22,7 @@
 
   <br><br>
 
-  <h1>🎧 SoundGraph — Recomendação de Músicas com Neo4j</h1>
+  <h1>🎧 SoundGraph — Recomendação de músicas com Neo4j</h1>
   <p><b>AI Engineer | Especialista em Governança 4.0 e Qualidade | Engenheiro Químico</b></p>
   <p>Projeto prático da DIO para modelar preferências musicais e descobrir recomendações usando banco de dados em grafos.</p>
 </div>
@@ -30,6 +34,12 @@
 O SoundGraph representa usuários, músicas, artistas, gêneros e interações em um grafo. A recomendação parte de um princípio simples e explicável: **usuários com gostos semelhantes ajudam a encontrar músicas que ainda não foram ouvidas**.
 
 > Projeto autoral inspirado na organização dos exemplos públicos de [`neo4j-graph-examples`](https://github.com/neo4j-graph-examples/), sem reutilizar dados proprietários.
+
+---
+
+## 🎯 Projeto em Destaque: Automação & Análise de Dados no McDonald's (Rua do Riachuelo, SP)
+
+Atuação técnica focada na otimização de rotinas operacionais, monitoramento de métricas em tempo real e estruturação de rotinas de análise para o restaurante McDonald's localizado na Rua do Riachuelo, São Paulo. A solução integra pipelines de dados e visualização de dashboards funcionais para suporte à tomada de decisão rápida e controle de qualidade contínuo.
 
 ---
 
@@ -58,11 +68,23 @@ Em um modelo relacional, a pergunta “o que pessoas parecidas escutaram e eu ai
 ## 🗂️ Estrutura do Repositório
 
 ```text
-data/musicas.csv                      # Dataset pequeno e reproduzível
-cypher/01-schema.cypher               # Constraints e índices
-cypher/02-carga.cypher                # Importação idempotente com LOAD CSV
-cypher/03-consultas.cypher            # Perguntas de negócio e recomendação
-cypher/04-evidencias.cypher           # Consultas para gerar evidências no Browser
-cypher/05-limpeza.cypher              # Limpeza controlada do dataset
-docs/modelo-grafo.svg                 # Diagrama visual do modelo
+data/musicas.csv                         # Dataset pequeno e reproduzível
+cypher/01-schema.cypher                  # Constraints e índices
+cypher/02-carga.cypher                   # Importação idempotente com LOAD CSV
+cypher/03-consultas.cypher               # Perguntas de negócio e recomendação
+cypher/04-evidencias.cypher              # Consultas para gerar evidências no Browser
+cypher/05-limpeza.cypher                 # Limpeza controlada do dataset
+docs/modelo-grafo.svg                    # Diagrama visual do modelo
 docs/Dossie_Tecnico_SoundGraph_Neo4j.pdf # Dossiê técnico completo em PDF
+
+---
+
+## 📬 Contatos e Canais
+
+- **GitHub:** [Rafael-TOZATO](https://github.com/Rafael-TOZATO)
+- **LinkedIn:** [rafaeltozato81](https://www.linkedin.com/in/rafaeltozato81)
+- **Medium:** [@ornelas.tozato](https://medium.com/@ornelas.tozato)
+- **Dev Hub:** [tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
+- **H-Folio:** [h-folio-l0.vercel.app](https://h-folio-l0.vercel.app)
+- **Microsoft Learn:** [rafaelornelastozato-2209](https://learn.microsoft.com/pt-br/users/rafaelornelastozato-2209)
+- **E-mail:** ornelas.tozato@gmail.com
