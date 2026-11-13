@@ -80,3 +80,23 @@ cypher/04-evidencias.cypher             # Consultas para gerar evidências no Br
 cypher/05-limpeza.cypher                # Limpeza controlada do dataset
 docs/modelo-grafo.svg                  # Diagrama visual do modelo
 docs/Dossie_Tecnico_SoundGraph_Neo4j.pdf # Dossiê técnico completo em PDF
+
+
+---
+
+## Governança 4.0 — Segurança e Qualidade
+
+Este repositório adota controles de Governança 4.0 orientados à integridade documental, rastreabilidade e segurança da cadeia de suprimentos.
+
+- **Quality Gate:** validação da estrutura do PDF, integridade documental, presença dos arquivos de dados e dos scripts Cypher.
+- **Segurança de segredos:** varredura integral do histórico Git com Gitleaks Action v3.0.0.
+- **Gestão de dados:** verificação automatizada da estrutura de dados e dos artefatos técnicos versionados.
+- **Menor privilégio:** permissões mínimas e checkout sem persistência de credenciais.
+- **Rastreabilidade:** evidências de execução e histórico de alterações disponíveis no GitHub Actions.
+
+<div align="center">
+
+[![Quality Gate](https://img.shields.io/github/actions/workflow/status/Rafael-TOZATO/recomendacao-musicas-neo4j/quality-gate.yml?branch=main&label=Quality%20Gate)](https://github.com/Rafael-TOZATO/recomendacao-musicas-neo4j/actions/workflows/quality-gate.yml)
+[![Gitleaks](https://img.shields.io/github/actions/workflow/status/Rafael-TOZATO/recomendacao-musicas-neo4j/gitleaks.yml?branch=main&label=Gitleaks)](https://github.com/Rafael-TOZATO/recomendacao-musicas-neo4j/actions/workflows/gitleaks.yml)
+
+</div>

@@ -1,0 +1,45 @@
+name: Static Documentation Quality Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-gate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: PDF integrity and repository structure
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Install qpdf
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y qpdf
+
+      - name: Validate documentation and data assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s README.md
+          test -d cypher
+          test -d data
+          test -s data/musicas.csv
+          find cypher -maxdepth 1 -type f -name '*.cypher' -print -quit | grep -q .
+          pdf="$(find . -maxdepth 1 -type f -iname '*.pdf' -print -quit)"
+          test -n "$pdf"
+          test "$(head -c 5 "$pdf")" = "%PDF-"
+          qpdf --check "$pdf"
