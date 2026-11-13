@@ -26,11 +26,9 @@ Atuação técnica focada na otimização de rotinas operacionais, monitoramento
 
 Em um modelo relacional, a pergunta “o que pessoas parecidas escutaram e eu ainda não escutei?” exige várias junções. Em Neo4j, os caminhos entre `Usuario`, `Musica`, `Artista` e `Genero` são os próprios dados, tornando a consulta mais natural, legível e fácil de evoluir.
 
----
-
 ## 📊 Modelo do Grafo
 
-![Modelo do grafo SoundGraph](docs/modelo-grafo.svg)
+[Modelo do grafo SoundGraph](docs/modelo-grafo.svg)
 
 ### Entidades e Relacionamentos
 
@@ -42,11 +40,9 @@ Em um modelo relacional, a pergunta “o que pessoas parecidas escutaram e eu ai
 - `(:Musica)-[:CRIADA_POR]->(:Artista)`
 - `(:Musica)-[:PERTENCE_A]->(:Genero)`
 
----
-
 ## 🗂️ Estrutura do Repositório
 
-```text
+text
 data/musicas.csv                       # Dataset pequeno e reproduzível
 cypher/01-schema.cypher                # Constraints e índices
 cypher/02-carga.cypher                 # Importação idempotente com LOAD CSV
@@ -58,15 +54,12 @@ docs/Dossie_Tecnico_SoundGraph_Neo4j.pdf # Dossiê técnico completo em PDF
 
 > Projeto autoral inspirado na organização dos exemplos públicos de [`neo4j-graph-examples`](https://github.com/neo4j-graph-examples/), sem reutilizar dados proprietários.
 
----
 
 ## 📄 Documentação Técnica Completa
 
 Para uma análise aprofundada da arquitetura, formulação do algoritmo de recomendação, segurança, governança e conformidade com LGPD, consulte o dossiê técnico do projeto:
 
 - 📥 [**Baixar Dossiê Técnico em PDF**](docs/Dossie_Tecnico_SoundGraph_Neo4j.pdf)
-
-```
 
 ### 📍 Projeto em Destaque: Automação & Análise de Dados no McDonald's (Rua do Riachuelo, SP)
 
