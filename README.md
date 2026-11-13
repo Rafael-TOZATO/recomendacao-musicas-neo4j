@@ -12,56 +12,27 @@
   </p>
 </div>
 
----
-
----
-
----
-
-## Visão geral
+## 📌 Visão Geral
 
 O SoundGraph representa usuários, músicas, artistas, gêneros e interações em um grafo. A recomendação parte de um princípio simples e explicável: **usuários com gostos semelhantes ajudam a encontrar músicas que ainda não foram ouvidas**.
 
 > Projeto autoral inspirado na organização dos exemplos públicos de [`neo4j-graph-examples`](https://github.com/neo4j-graph-examples/), sem reutilizar dados proprietários.
 
----
-
----
-
----
-
-## 📄 Documentação Técnica Completa
-
-Para uma análise aprofundada da arquitetura, formulação do algoritmo de recomendação, segurança, governança e conformidade com LGPD, consulte o dossiê técnico do projeto:
-
-- 📥 [**Baixar Dossiê Técnico em PDF**](docs/Dossie_Tecnico_SoundGraph_Neo4j.pdf)
-
-```
-
----
-### 📍 Projeto em Destaque: Automação & Análise de Dados no McDonald's (Rua do Riachuelo, SP)
+## 🎯 Projeto em Destaque: Automação & Análise de Dados no McDonald's (Rua do Riachuelo, SP)
 
 Atuação técnica focada na otimização de rotinas operacionais, monitoramento de métricas em tempo real e estruturação de rotinas de análise para o restaurante McDonald's localizado na Rua do Riachuelo, São Paulo. A solução integra pipelines de dados e visualização de dashboards funcionais para suporte à tomada de decisão rápida e controle de qualidade contínuo.
 
----
-
----
-
----
-
-## Por que grafos?
+## 🧠 Por que Grafos?
 
 Em um modelo relacional, a pergunta “o que pessoas parecidas escutaram e eu ainda não escutei?” exige várias junções. Em Neo4j, os caminhos entre `Usuario`, `Musica`, `Artista` e `Genero` são os próprios dados, tornando a consulta mais natural, legível e fácil de evoluir.
 
 ---
 
----
-
-## Modelo do grafo
+## 📊 Modelo do Grafo
 
 ![Modelo do grafo SoundGraph](docs/modelo-grafo.svg)
 
-### Entidades e relacionamentos
+### Entidades e Relacionamentos
 
 - `(:Usuario {id, nome, pais})`
 - `(:Musica {id, titulo, ano, popularidade})`
@@ -73,23 +44,33 @@ Em um modelo relacional, a pergunta “o que pessoas parecidas escutaram e eu ai
 
 ---
 
----
-
-## Estrutura
+## 🗂️ Estrutura do Repositório
 
 ```text
 data/musicas.csv                       # Dataset pequeno e reproduzível
-cypher/01-schema.cypher                 # Constraints e índices
-cypher/02-carga.cypher                  # Importação idempotente com LOAD CSV
-cypher/03-consultas.cypher              # Perguntas de negócio e recomendação
-cypher/04-evidencias.cypher             # Consultas para gerar evidências no Browser
-cypher/05-limpeza.cypher                # Limpeza controlada do dataset
+cypher/01-schema.cypher                # Constraints e índices
+cypher/02-carga.cypher                 # Importação idempotente com LOAD CSV
+cypher/03-consultas.cypher             # Perguntas de negócio e recomendação
+cypher/04-evidencias.cypher            # Consultas para gerar evidências no Browser
+cypher/05-limpeza.cypher               # Limpeza controlada do dataset
 docs/modelo-grafo.svg                  # Diagrama visual do modelo
 docs/Dossie_Tecnico_SoundGraph_Neo4j.pdf # Dossiê técnico completo em PDF
 
----
+> Projeto autoral inspirado na organização dos exemplos públicos de [`neo4j-graph-examples`](https://github.com/neo4j-graph-examples/), sem reutilizar dados proprietários.
 
 ---
+
+## 📄 Documentação Técnica Completa
+
+Para uma análise aprofundada da arquitetura, formulação do algoritmo de recomendação, segurança, governança e conformidade com LGPD, consulte o dossiê técnico do projeto:
+
+- 📥 [**Baixar Dossiê Técnico em PDF**](docs/Dossie_Tecnico_SoundGraph_Neo4j.pdf)
+
+```
+
+### 📍 Projeto em Destaque: Automação & Análise de Dados no McDonald's (Rua do Riachuelo, SP)
+
+Atuação técnica focada na otimização de rotinas operacionais, monitoramento de métricas em tempo real e estruturação de rotinas de análise para o restaurante McDonald's localizado na Rua do Riachuelo, São Paulo. A solução integra pipelines de dados e visualização de dashboards funcionais para suporte à tomada de decisão rápida e controle de qualidade contínuo.
 
 ## Governança 4.0 — Segurança e Qualidade
 
@@ -101,25 +82,6 @@ Este repositório adota controles automatizados de Governança 4.0 para assegura
 - **Dependências:** monitoramento automatizado e revisão de vulnerabilidades conforme manifests e lockfiles existentes.
 - **Menor privilégio:** permissões mínimas nos workflows e checkout sem persistência desnecessária de credenciais.
 - **Rastreabilidade:** commits, execuções e resultados dos controles registrados no GitHub Actions.
-
-### Controles específicos do repositório
-
-- **Quality Gate:** validação da estrutura do PDF, integridade documental, presença dos arquivos de dados e dos scripts Cypher.
-- **Segurança de segredos:** varredura integral do histórico Git com Gitleaks Action v3.0.0.
-- **Gestão de dados:** verificação automatizada da estrutura de dados e dos artefatos técnicos versionados.
-- **Menor privilégio:** permissões mínimas e checkout sem persistência de credenciais.
-- **Rastreabilidade:** evidências de execução e histórico de alterações disponíveis no GitHub Actions.
-- **Quality Gate:** validação automatizada do escopo do repositório, incluindo verificações de integridade, testes, análise estática, tipagem ou build quando aplicáveis.
-- **Segurança de segredos:** varredura do histórico Git com Gitleaks Action v3.0.0.
-- **SAST:** análise com GitHub CodeQL para linguagens suportadas e presentes no código-fonte.
-- **Dependências:** monitoramento automatizado e revisão de vulnerabilidades conforme os manifests e lockfiles existentes.
-- **Menor privilégio:** permissões mínimas nos workflows e checkout sem persistência desnecessária de credenciais.
-- **Rastreabilidade:** commits, execuções e resultados dos controles permanecem registrados no GitHub Actions.
-
-
-
-
----
 
 <div align="center">
 
@@ -133,14 +95,11 @@ Este repositório adota controles automatizados de Governança 4.0 para assegura
 - **App Ecosystem:** [tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
 - **H-Folio:** [h-folio-l0.vercel.app](https://h-folio-l0.vercel.app)
 
----
-- **GitHub:** [github.com/Rafael-TOZATO](https://github.com/Rafael-TOZATO)
-
 - **Medium:** [medium.com/@ornelas.tozato](https://medium.com/@ornelas.tozato)
 
 - **E-mail:** ornelas.tozato@gmail.com
 - **LinkedIn:** [rafaeltozato81](https://www.linkedin.com/in/rafaeltozato81)
 - **GitHub:** [Rafael-TOZATO](https://github.com/Rafael-TOZATO)
-- **Medium:** [@ornelas.tozato](https://medium.com/@ornelas.tozato)
+  
 - **Dev Hub:** [tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
 - **Microsoft Learn:** [rafaelornelastozato-2209](https://learn.microsoft.com/pt-br/users/rafaelornelastozato-2209)
