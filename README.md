@@ -49,6 +49,26 @@ Em um modelo relacional, a pergunta “o que pessoas parecidas escutaram e eu ai
 
 ---
 
+## 🛡️ Governança 4.0 — Segurança e Qualidade
+
+Este repositório adota controles automatizados de Governança 4.0 para assegurar integridade dos artefatos e do código, rastreabilidade das alterações, gestão de dependências e prevenção de exposição de credenciais, aplicados conforme o escopo técnico do projeto.
+
+- **Quality Gate:** Validação automatizada do escopo do repositório, incluindo integridade, testes, análise estática, tipagem ou build quando aplicáveis.
+- **Segurança de Segredos:** Varredura do histórico Git com Gitleaks Action v3.0.0.
+- **SAST:** Análise com GitHub CodeQL para linguagens suportadas e presentes no código-fonte.
+- **Dependências:** Monitoramento automatizado e revisão de vulnerabilidades conforme manifests e lockfiles existentes.
+- **Menor Privilégio:** Permissões mínimas nos workflows e checkout sem persistência desnecessária de credenciais.
+- **Rastreabilidade:** Commits, execuções e resultados dos controles registrados no GitHub Actions.
+
+<div align="center">
+
+[![Quality Gate](https://img.shields.io/github/actions/workflow/status/Rafael-TOZATO/recomendacao-musicas-neo4j/quality-gate.yml?branch=main&label=Quality%20Gate&style=for-the-badge)](https://github.com/Rafael-TOZATO/recomendacao-musicas-neo4j/actions/workflows/quality-gate.yml)
+[![Gitleaks](https://img.shields.io/github/actions/workflow/status/Rafael-TOZATO/recomendacao-musicas-neo4j/gitleaks.yml?branch=main&label=Gitleaks&style=for-the-badge)](https://github.com/Rafael-TOZATO/recomendacao-musicas-neo4j/actions/workflows/gitleaks.yml)
+
+</div>
+
+---
+
 ## 📊 Modelo do Grafo
 
 [Modelo do grafo SoundGraph](docs/modelo-grafo.svg)
@@ -76,15 +96,3 @@ cypher/04-evidencias.cypher              # Consultas para gerar evidências no B
 cypher/05-limpeza.cypher                 # Limpeza controlada do dataset
 docs/modelo-grafo.svg                    # Diagrama visual do modelo
 docs/Dossie_Tecnico_SoundGraph_Neo4j.pdf # Dossiê técnico completo em PDF
-
----
-
-## 📬 Contatos e Canais
-
-- **GitHub:** [Rafael-TOZATO](https://github.com/Rafael-TOZATO)
-- **LinkedIn:** [rafaeltozato81](https://www.linkedin.com/in/rafaeltozato81)
-- **Medium:** [@ornelas.tozato](https://medium.com/@ornelas.tozato)
-- **Dev Hub:** [tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
-- **H-Folio:** [h-folio-l0.vercel.app](https://h-folio-l0.vercel.app)
-- **Microsoft Learn:** [rafaelornelastozato-2209](https://learn.microsoft.com/pt-br/users/rafaelornelastozato-2209)
-- **E-mail:** ornelas.tozato@gmail.com
