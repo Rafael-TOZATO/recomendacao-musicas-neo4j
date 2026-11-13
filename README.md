@@ -16,6 +16,8 @@
 
 ---
 
+---
+
 ## Visão geral
 
 O SoundGraph representa usuários, músicas, artistas, gêneros e interações em um grafo. A recomendação parte de um princípio simples e explicável: **usuários com gostos semelhantes ajudam a encontrar músicas que ainda não foram ouvidas**.
@@ -26,11 +28,15 @@ O SoundGraph representa usuários, músicas, artistas, gêneros e interações e
 
 ---
 
+---
+
 ## 📄 Documentação Técnica Completa
 
 Para uma análise aprofundada da arquitetura, formulação do algoritmo de recomendação, segurança, governança e conformidade com LGPD, consulte o dossiê técnico do projeto:
 
 - 📥 [**Baixar Dossiê Técnico em PDF**](docs/Dossie_Tecnico_SoundGraph_Neo4j.pdf)
+
+```
 
 ---
 ### 📍 Projeto em Destaque: Automação & Análise de Dados no McDonald's (Rua do Riachuelo, SP)
@@ -83,15 +89,32 @@ docs/Dossie_Tecnico_SoundGraph_Neo4j.pdf # Dossiê técnico completo em PDF
 
 ---
 
+---
+
 ## Governança 4.0 — Segurança e Qualidade
 
-Este repositório adota controles de Governança 4.0 orientados à integridade documental, rastreabilidade e segurança da cadeia de suprimentos.
+Este repositório adota controles automatizados de Governança 4.0 para assegurar integridade dos artefatos e do código, rastreabilidade das alterações, gestão de dependências e prevenção de exposição de credenciais, aplicados conforme o escopo técnico do projeto.
+
+- **Quality Gate:** validação automatizada do escopo do repositório, incluindo integridade, testes, análise estática, tipagem ou build quando aplicáveis.
+- **Segurança de segredos:** varredura do histórico Git com Gitleaks Action v3.0.0.
+- **SAST:** análise com GitHub CodeQL para linguagens suportadas e presentes no código-fonte.
+- **Dependências:** monitoramento automatizado e revisão de vulnerabilidades conforme manifests e lockfiles existentes.
+- **Menor privilégio:** permissões mínimas nos workflows e checkout sem persistência desnecessária de credenciais.
+- **Rastreabilidade:** commits, execuções e resultados dos controles registrados no GitHub Actions.
+
+### Controles específicos do repositório
 
 - **Quality Gate:** validação da estrutura do PDF, integridade documental, presença dos arquivos de dados e dos scripts Cypher.
 - **Segurança de segredos:** varredura integral do histórico Git com Gitleaks Action v3.0.0.
 - **Gestão de dados:** verificação automatizada da estrutura de dados e dos artefatos técnicos versionados.
 - **Menor privilégio:** permissões mínimas e checkout sem persistência de credenciais.
 - **Rastreabilidade:** evidências de execução e histórico de alterações disponíveis no GitHub Actions.
+- **Quality Gate:** validação automatizada do escopo do repositório, incluindo verificações de integridade, testes, análise estática, tipagem ou build quando aplicáveis.
+- **Segurança de segredos:** varredura do histórico Git com Gitleaks Action v3.0.0.
+- **SAST:** análise com GitHub CodeQL para linguagens suportadas e presentes no código-fonte.
+- **Dependências:** monitoramento automatizado e revisão de vulnerabilidades conforme os manifests e lockfiles existentes.
+- **Menor privilégio:** permissões mínimas nos workflows e checkout sem persistência desnecessária de credenciais.
+- **Rastreabilidade:** commits, execuções e resultados dos controles permanecem registrados no GitHub Actions.
 
 <div align="center">
 
@@ -102,45 +125,19 @@ Este repositório adota controles de Governança 4.0 orientados à integridade d
 
 ---
 
-## Governança 4.0 — Segurança e Qualidade
+## 📬 CONTATOS E PERFIS
 
-Este repositório adota controles automatizados de Governança 4.0 para assegurar integridade dos artefatos e do código, rastreabilidade das alterações, gestão de dependências e prevenção de exposição de credenciais. Os controles são aplicados conforme a natureza técnica e os componentes efetivamente mantidos no projeto.
-
-- **Quality Gate:** validação automatizada do escopo do repositório, incluindo verificações de integridade, testes, análise estática, tipagem ou build quando aplicáveis.
-- **Segurança de segredos:** varredura do histórico Git com Gitleaks Action v3.0.0.
-- **SAST:** análise com GitHub CodeQL para linguagens suportadas e presentes no código-fonte.
-- **Dependências:** monitoramento automatizado e revisão de vulnerabilidades conforme os manifests e lockfiles existentes.
-- **Menor privilégio:** permissões mínimas nos workflows e checkout sem persistência desnecessária de credenciais.
-- **Rastreabilidade:** commits, execuções e resultados dos controles permanecem registrados no GitHub Actions.
-
----
-
-## 💻 PROJETOS E PORTFÓLIOS
 - **App Ecosystem:** [tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
 - **H-Folio:** [h-folio-l0.vercel.app](https://h-folio-l0.vercel.app)
 
 ---
-
-## 🐙 CÓDIGO E REPOSITÓRIOS
 - **GitHub:** [github.com/Rafael-TOZATO](https://github.com/Rafael-TOZATO)
 
----
-
-## ✍️ ARTIGOS E PUBLICAÇÕES
 - **Medium:** [medium.com/@ornelas.tozato](https://medium.com/@ornelas.tozato)
 
----
-
-## 📬 CONTATOS
 - **E-mail:** ornelas.tozato@gmail.com
 - **LinkedIn:** [rafaeltozato81](https://www.linkedin.com/in/rafaeltozato81)
 - **GitHub:** [Rafael-TOZATO](https://github.com/Rafael-TOZATO)
 - **Medium:** [@ornelas.tozato](https://medium.com/@ornelas.tozato)
 - **Dev Hub:** [tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
-- **H-Folio:** [h-folio-l0.vercel.app](https://h-folio-l0.vercel.app)
 - **Microsoft Learn:** [rafaelornelastozato-2209](https://learn.microsoft.com/pt-br/users/rafaelornelastozato-2209)
----
-
----
-
-## 📬 CONTATOS E PERFIS
