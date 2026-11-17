@@ -27,27 +27,19 @@
   <p>Projeto prático da DIO para modelar preferências musicais e descobrir recomendações usando banco de dados em grafos.</p>
 </div>
 
----
-
 ## 📌 Visão Geral
 
 O SoundGraph representa usuários, músicas, artistas, gêneros e interações em um grafo. A recomendação parte de um princípio simples e explicável: **usuários com gostos semelhantes ajudam a encontrar músicas que ainda não foram ouvidas**.
 
 > Projeto autoral inspirado na organização dos exemplos públicos de [`neo4j-graph-examples`](https://github.com/neo4j-graph-examples/), sem reutilizar dados proprietários.
 
----
-
 ## 🎯 Projeto em Destaque: Automação & Análise de Dados no McDonald's (Rua do Riachuelo, SP)
 
 Atuação técnica focada na otimização de rotinas operacionais, monitoramento de métricas em tempo real e estruturação de rotinas de análise para o restaurante McDonald's localizado na Rua do Riachuelo, São Paulo. A solução integra pipelines de dados e visualização de dashboards funcionais para suporte à tomada de decisão rápida e controle de qualidade contínuo.
 
----
-
 ## 🧠 Por que Grafos?
 
 Em um modelo relacional, a pergunta “o que pessoas parecidas escutaram e eu ainda não escutei?” exige várias junções. Em Neo4j, os caminhos entre `Usuario`, `Musica`, `Artista` e `Genero` são os próprios dados, tornando a consulta mais natural, legível e fácil de evoluir.
-
----
 
 ## 🛡️ Governança 4.0 — Segurança e Qualidade
 
@@ -60,14 +52,29 @@ Este repositório adota controles automatizados de Governança 4.0 para assegura
 - **Menor Privilégio:** Permissões mínimas nos workflows e checkout sem persistência desnecessária de credenciais.
 - **Rastreabilidade:** Commits, execuções e resultados dos controles registrados no GitHub Actions.
 
+## 📬 CONTATOS E PERFIS
+
+💻 **PROJETOS E PORTFÓLIOS**
+* Ecossistema de Aplicativos: [tozato-ai-core.vercel.app](https://tozato-ai-core.vercel.app)
+* H-Folio Professional: [h-folio-I0.vercel.app](https://h-folio-I0.vercel.app)
+
+🐙 **CÓDIGOS E REPOSITÓRIOS**
+* GitHub: [github.com/Rafael-TOZATO](https://github.com/Rafael-TOZATO)
+
+✍️ **ARTIGOS E PUBLICAÇÕES**
+* Medium: [medium.com/@ornelas.tozato](https://medium.com/@ornelas.tozato)
+* Comunidade DEV: [dev.to/rafaeltozato](https://dev.to/rafaeltozato)
+
+💼 **CONTATO**
+* LinkedIn: [linkedin.com/in/rafaeltozato81](https://www.linkedin.com/in/rafaeltozato81)
+* E-mail: ornelas.tozato@gmail.com
+
 <div align="center">
 
 [![Quality Gate](https://img.shields.io/github/actions/workflow/status/Rafael-TOZATO/recomendacao-musicas-neo4j/quality-gate.yml?branch=main&label=Quality%20Gate&style=for-the-badge)](https://github.com/Rafael-TOZATO/recomendacao-musicas-neo4j/actions/workflows/quality-gate.yml)
 [![Gitleaks](https://img.shields.io/github/actions/workflow/status/Rafael-TOZATO/recomendacao-musicas-neo4j/gitleaks.yml?branch=main&label=Gitleaks&style=for-the-badge)](https://github.com/Rafael-TOZATO/recomendacao-musicas-neo4j/actions/workflows/gitleaks.yml)
 
 </div>
-
----
 
 ## 📊 Modelo do Grafo
 
@@ -82,8 +89,6 @@ Este repositório adota controles automatizados de Governança 4.0 para assegura
 - `(:Usuario)-[:OUVIU {reproducoes, nota, ultimaVez}]->(:Musica)`
 - `(:Musica)-[:CRIADA_POR]->(:Artista)`
 - `(:Musica)-[:PERTENCE_A]->(:Genero)`
-
----
 
 ## 🗂️ Estrutura do Repositório
 
